@@ -116,10 +116,10 @@ const ComingSoonPage = () => {
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
         <div className="cs-content max-w-[50%]">
-          <div className="cs-head">
+          <div className="cs-head font-MetropolisMedium">
             Welcome to MCCS
           </div>
-          <h3 className="font-bold text-5xl ">We are currently working on a new super awesome website.</h3>
+          <h3 className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</h3>
           <p className="my-[3rem]">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
         </div>
       </div>

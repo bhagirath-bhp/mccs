@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: metropolis;
-    src: url("/public/metropolis/Metropolis-Regular.otf")format('.otf');
+    font-family: 'MetropolisMedium';
+    src: url("/public/metropolis/Metropolis-Medium.otf")format('.otf');
+}
+@font-face {
+    font-family: 'DomineRegular';
+    src: url("/public/Domine/static/Domine-Regular.ttf")format('.ttf');
 }

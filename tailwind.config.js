@@ -33,7 +33,10 @@ export default withMT({
       '4xl': '2.441rem',
       '5xl': '3.052rem',
     },
-
+    fontFamily: {
+      MetropolisMedium: ['MetropolisMedium'],
+      DomineRegular: ['DomineRegular']
+    },
     extend: {
       transitionProperty: {
         'height': 'max-h opacity'
