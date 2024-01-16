@@ -4,7 +4,7 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
-import Countdown from "../components/Countdown";
+import CustomCountdown from "../components/CustomCountdown";
 import { useState } from "react";
 import BurgerIcon from "../components/BurgerIcon";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -19,7 +19,7 @@ const ComingSoonPage = () => {
     <div className="h-screen p-5 flex items-center flex-col">
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
-          <Button onClick={openDrawer} className="text-sm">
+          <Button onClick={openDrawer} className="text-xl bg-gray-800">
             {/* <BurgerIcon/> */}
             <RxHamburgerMenu/>
           </Button>
@@ -28,14 +28,14 @@ const ComingSoonPage = () => {
               <Typography variant="h5" color="blue-gray-100">
                 We are MCCS. Mumbai City Carewell Security.
               </Typography>
-              <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
+              <IconButton variant="text" color="white" className="bg-gray-700" onClick={closeDrawer}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="h-5 w-5 text-white"
+                  className="h-5 w-5 "
                 >
                   <path
                     strokeLinecap="round"
@@ -55,7 +55,7 @@ const ComingSoonPage = () => {
       <div className="cs-main flex justify-around items-center h-full w-full">
         <div className="cs-countdown">
           Launching In
-          <Countdown days={2} hours={5} minutes={30} seconds={15} />
+          <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
         <div className="cs-content max-w-[60%]">
           <div className="cs-head">
