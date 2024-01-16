@@ -37,6 +37,7 @@ export default withMT({
       MetropolisMedium: ['MetropolisMedium'],
       MetropolisRegular: ['MetropolisRegular'],
       DomineRegular: ['DomineRegular'],
+      PoppinsMedium: ['PoppinsMedium'],
     },
     extend: {
       transitionProperty: {

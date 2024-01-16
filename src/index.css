@@ -16,11 +16,7 @@
     font-family: 'DomineRegular';
     src: url("/public/Domine/domine-regular-webfont.woff2")format('.woff2');
 }
-
-
-.logo{
-    background: url('/logo.png');
-}
-.cs-top{
-    font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url("/public/Poppins/Poppins-Medium.ttf")format('.ttf');
 }

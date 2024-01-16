@@ -10,7 +10,7 @@ import BurgerIcon from "../components/BurgerIcon";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
+import '../styles/styles.css'
 
 
 const ComingSoonPage = () => {
@@ -51,7 +51,7 @@ const ComingSoonPage = () => {
                 <Typography variant="h5" className="berbefore text-blue-gray-100 text-[4rem] font-DomineRegular font-light">
                   We are MCCS. Mumbai City Carewell Security.
                 </Typography>
-                <Typography color="gray" className="mb-8 pr-4 font-MetropolisRegular w-[90%]">
+                <Typography color="gray" className="mb-8 pr-4 w-[90%] cs-content">
                   With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
                 </Typography>
               </div>
@@ -115,41 +115,42 @@ const ComingSoonPage = () => {
       <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full">
         <div className="cs-countdown smMobile:hidden tablet:block">
           <span className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></span>
-          <p className="font-MetropolisRegular"></p>
-          Launching In
+          <p className="cs-head">
+            Launching In
+          </p>
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
         <div className="cs-content tablet:max-w-[50%] smMobile:max-w-[80%]">
-          <p className="cs-head font-MetropolisMedium">
+          <p className="cs-head">
             Welcome to MCCS
           </p>
           <p className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</p>
-          <p className="my-[3rem]">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
+          <p className="my-[3rem] cs-content">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
           <form className="subscribe-email">
-            <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20]" placeholder="Enter email"/>
-            <button type="submit" className="px-[2rem] py-[1rem] bg-blue-600">Notify Me</button>
+            <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20]" placeholder="Enter email" />
+            <button type="submit" className="px-[2rem] py-[1rem] bg-blue-600 text-white">Notify Me</button>
           </form>
         </div>
         <div className="connect-socials flex flex-col gap-[2rem]">
           <div className="facebook flex justify-center items-center relative">
             <Button utton className="text-xl p-0 mx-3"><FaFacebookSquare /></Button>
-            <p className="absolute right-[4rem] scale-0 transition duration-300">Facebook</p>
+            <p className="absolute right-[4rem] transition duration-300">Facebook</p>
           </div>
           <div className="facebook flex justify-center items-center relative">
             <Button utton className="text-xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
-            <p className="absolute right-[4rem]">Twitter</p>
+            <p className="absolute right-[4rem] transition duration-300">Twitter</p>
           </div>
           <div className="facebook flex justify-center items-center relative">
             <Button utton className="text-xl p-0 mx-3 bg-transparent"><FaInstagram /></Button>
-            <p className="absolute right-[4rem]">Instagram</p>
+            <p className="absolute right-[4rem] transition duration-300">Instagram</p>
           </div>
           <div className="facebook flex justify-center items-center relative">
             <Button utton className="text-xl p-0 mx-3"><FaLinkedin /></Button>
-            <p className="absolute right-[4rem]">Linkdin</p>
+            <p className="absolute right-[4rem] transition duration-300">Linkdin</p>
           </div>
           <div className="facebook flex justify-center items-center relative">
             <Button utton className="text-xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
-            <p className="absolute right-[4rem]">Youtube</p>
+            <p className="absolute right-[4rem] transition duration-300">Youtube</p>
           </div>
         </div>
         <div className="cs-countdown tablet:hidden">
