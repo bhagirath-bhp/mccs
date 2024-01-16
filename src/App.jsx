@@ -5,7 +5,7 @@ import ComingSoonPage from './pages/ComingSoonPage'
 
 export default function App() {
   return (
-    <div className='font-metropolis'>
+    <div className='font-metropolis bg-black'>
       {/* <ParticlesPage /> */}
       <ComingSoonPage />
     </div>

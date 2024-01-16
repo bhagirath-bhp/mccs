@@ -4,5 +4,5 @@
 
 @font-face {
     font-family: metropolis;
-    src: url("/metropolis/Metropolis-Medium.otf");
+    src: url("/public/metropolis/Metropolis-Regular.otf")format('.otf');
 }

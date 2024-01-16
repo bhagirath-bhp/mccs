@@ -28,9 +28,9 @@ const ComingSoonPage = () => {
             <RxHamburgerMenu />
           </Button>
           <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[5rem] px-[8rem] bg-gray">
-            <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full overflow-y-scroll">
+            <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full smMobile:overflow-y-scroll tablet:overflow-hidden">
               <div className="drawer-left">
-              <IconButton variant="text" color="white" className="bg-gray-700 ml-[90%] tablet:hidden" onClick={closeDrawer}>
+                <IconButton variant="text" color="white" className="bg-gray-700 ml-[90%] tablet:hidden" onClick={closeDrawer}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -88,7 +88,7 @@ const ComingSoonPage = () => {
                     <p>Facebook</p>
                   </div>
                   <div className="facebook flex justify-center items-center">
-                    <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaXTwitter/></Button>
+                    <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
                     <p>Twitter</p>
                   </div>
                   <div className="facebook flex justify-center items-center">
@@ -110,7 +110,7 @@ const ComingSoonPage = () => {
         </div>
         <div className="logo">MCCS</div>
       </div>
-      <div className="cs-main flex justify-around items-center h-full w-full">
+      <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full">
         <div className="cs-countdown">
           Launching In
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
@@ -119,7 +119,7 @@ const ComingSoonPage = () => {
           <div className="cs-head">
             Welcome to MCCS
           </div>
-          <h3 className="font-bold text-5xl">We are currently working on a new super awesome website.</h3>
+          <h3 className="font-bold text-5xl ">We are currently working on a new super awesome website.</h3>
           <p className="my-[3rem]">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
         </div>
       </div>
