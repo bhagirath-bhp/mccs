@@ -10,6 +10,7 @@ import BurgerIcon from "../components/BurgerIcon";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import ParticlesLayer from "../components/ParticlesLayer";
 import '../styles/styles.css'
 
 
@@ -19,12 +20,12 @@ const ComingSoonPage = () => {
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
   return (
-    <div className="smMobile:px-1 tablet:p-5 flex items-center flex-col bg-black">
+    <div className="smMobile:px-1 tablet:p-5 flex items-center flex-col bg-transparent">
+      <ParticlesLayer/>
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
           <Button onClick={openDrawer} className="text-xl bg-transparent border-[1px] border-blue-600 text-blue-600">
             {/* <BurgerIcon/> */}
-
             <RxHamburgerMenu />
           </Button>
           <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
@@ -115,13 +116,13 @@ const ComingSoonPage = () => {
       <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full">
         <div className="cs-countdown smMobile:hidden tablet:block">
           <span className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></span>
-          <p className="cs-head">
+          <p className="cs-head capitalize">
             Launching In
           </p>
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
         <div className="cs-content tablet:max-w-[50%] smMobile:max-w-[80%]">
-          <p className="cs-head">
+          <p className="cs-head capitalize">
             Welcome to MCCS
           </p>
           <p className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</p>
