@@ -19,10 +19,10 @@ const ComingSoonPage = () => {
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
   return (
-    <div className="h-screen p-5 flex items-center flex-col">
+    <div className="h-screen p-5 flex items-center flex-col bg-black">
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
-          <Button onClick={openDrawer} className="text-xl bg-gray-800">
+          <Button onClick={openDrawer} className="text-xl bg-transparent border-[1px] border-blue-600 text-blue-600">
             {/* <BurgerIcon/> */}
             <RxHamburgerMenu />
           </Button>
