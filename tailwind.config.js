@@ -35,7 +35,8 @@ export default withMT({
     },
     fontFamily: {
       MetropolisMedium: ['MetropolisMedium'],
-      DomineRegular: ['DomineRegular']
+      MetropolisRegular: ['MetropolisRegular'],
+      DomineRegular: ['DomineRegular'],
     },
     extend: {
       transitionProperty: {

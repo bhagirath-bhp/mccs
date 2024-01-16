@@ -4,9 +4,18 @@
 
 @font-face {
     font-family: 'MetropolisMedium';
-    src: url("/public/metropolis/Metropolis-Medium.otf")format('.otf');
+    src: url("/public/metropolis/metropolis-medium-webfont.woff")format('.woff');
+}
+@font-face {
+    font-family: MetropolisRegular;
+    src: url('/public/metropolis/metropolis-regular-webfont.woff')format('.woff');
 }
 @font-face {
     font-family: 'DomineRegular';
-    src: url("/public/Domine/static/Domine-Regular.ttf")format('.ttf');
+    src: url("/public/Domine/domine-regular-webfont.woff2")format('.woff2');
+}
+
+
+.logo{
+    background: url('/logo.png');
 }

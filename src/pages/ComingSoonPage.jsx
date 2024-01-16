@@ -15,11 +15,11 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const ComingSoonPage = () => {
   const [open, setOpen] = useState(false);
-
+  const [hamMsg, setHamMsg] = useState("More Info")
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
   return (
-    <div className="h-screen p-5 flex items-center flex-col bg-black">
+    <div className="smMobile:px-1 tablet:p-5 flex items-center flex-col bg-black">
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
           <Button onClick={openDrawer} className="text-xl bg-transparent border-[1px] border-blue-600 text-blue-600">
@@ -27,10 +27,10 @@ const ComingSoonPage = () => {
 
             <RxHamburgerMenu />
           </Button>
-          <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[5rem] px-[8rem] bg-gray">
+          <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
             <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full smMobile:overflow-y-scroll tablet:overflow-hidden">
-              <div className="drawer-left">
-                <IconButton variant="text" color="white" className="bg-gray-700 ml-[90%] tablet:hidden" onClick={closeDrawer}>
+              <div className="drawer-left smMobile:p-[2rem] tablet:p-0">
+                <IconButton variant="text" color="white" className="bg-gray-700 text-white flex my-[5rem] ml-[5%] tablet:hidden" onClick={closeDrawer}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -45,16 +45,18 @@ const ComingSoonPage = () => {
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
+                  
                 </IconButton>
-                <Typography variant="h5" className="text-blue-gray-100 text-[4rem]">
+                <div className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></div>
+                <Typography variant="h5" className="berbefore text-blue-gray-100 text-[4rem] font-DomineRegular font-light">
                   We are MCCS. Mumbai City Carewell Security.
                 </Typography>
-                <Typography color="gray" className="mb-8 pr-4 font-normal w-[90%]">
+                <Typography color="gray" className="mb-8 pr-4 font-MetropolisRegular w-[90%]">
                   With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
                 </Typography>
               </div>
               <div className="drawer-right flex flex-col justify-between smMobile:items-center tablet:items-end h-full">
-                <IconButton variant="text" color="white" className="bg-gray-700 smMobile:hidden" onClick={closeDrawer}>
+                <IconButton variant="text" color="white" className="bg-gray-700 min-h-[2rem] smMobile:hidden tablet:block" onClick={closeDrawer}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -108,19 +110,23 @@ const ComingSoonPage = () => {
             </div>
           </Drawer>
         </div>
-        <div className="logo">MCCS</div>
+        <div className="logo bg-logo"></div>
       </div>
       <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full">
-        <div className="cs-countdown">
+        <div className="cs-countdown smMobile:hidden tablet:block">
           Launching In
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
-        <div className="cs-content max-w-[50%]">
-          <div className="cs-head font-MetropolisMedium">
+        <div className="cs-content tablet:max-w-[50%] smMobile:max-w-[80%]">
+          <p className="cs-head font-MetropolisMedium">
             Welcome to MCCS
-          </div>
-          <h3 className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</h3>
+          </p>
+          <p className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</p>
           <p className="my-[3rem]">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
+        </div>
+        <div className="cs-countdown tablet:hidden">
+          Launching In
+          <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
       </div>
     </div>
