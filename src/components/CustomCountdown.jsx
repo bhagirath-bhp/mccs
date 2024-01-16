@@ -24,17 +24,18 @@ const CustomCountdown = ({ days, hours, minutes, seconds }) => {
         return time < 10 ? `0${time}` : time;
     };
 
-    const daysLeft = Math.floor(remainingTime / (24 * 60 * 60));
-    const hoursLeft = Math.floor((remainingTime % (24 * 60 * 60)) / 3600);
-    const minutesLeft = Math.floor((remainingTime % 3600) / 60);
-    const secondsLeft = remainingTime % 60;
+    const daysLeft = formatTime(Math.floor(remainingTime / (24 * 60 * 60)));
+    const hoursLeft = formatTime(Math.floor((remainingTime % (24 * 60 * 60)) / 3600));
+    const minutesLeft = formatTime(Math.floor((remainingTime % 3600) / 60));
+    const secondsLeft = formatTime(remainingTime % 60);
+    
 
     return (
         <div className="flex flex-col justify-center text-center font-metropolis">
             <div className="flex flex-col text-left relative">
                 {/* <Countdown className="font-mono text-[10rem]" value={daysLeft} /> */}
-                <span className="font-mono text-[10rem]">{daysLeft}</span>
-                <span className="bg-blue-700 rounded w-fit px-4 py-2 absolute right-1 top-[20%]">days</span>
+                <span className="text-[7rem] font-[100]">{daysLeft}</span>
+                <span className="bg-blue-700 w-fit px-4 py-1 absolute right-[-0.6rem] bottom-[30%]">days</span>
             </div>
             <div className="hms flex gap-10">
                 <div className="flex flex-col">

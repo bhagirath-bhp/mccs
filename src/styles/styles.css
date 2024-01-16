@@ -1,3 +1,8 @@
 body, .cs-head, .cs-content{
     font-family: 'Poppins', sans-serif;
 }
+.cs-head{
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+}

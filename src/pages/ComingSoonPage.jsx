@@ -113,19 +113,20 @@ const ComingSoonPage = () => {
         </div>
         <div className="logo bg-logo"></div>
       </div>
-      <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full">
-        <div className="cs-countdown smMobile:hidden tablet:block">
-          <span className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></span>
-          <p className="cs-head capitalize">
-            Launching In
+      <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full smMobile:p-0 tablet:px-[5rem]">
+        <div className="cs-countdown smMobile:hidden tablet:block relative">
+          <div className="bar w-[2rem] h-[1px] bg-blue-600 absolute left-[-2.5rem] top-[.7rem]"></div>
+          <p className="cs-head uppercase">
+            LAUNCHING IN
           </p>
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
-        <div className="cs-content tablet:max-w-[50%] smMobile:max-w-[80%]">
-          <p className="cs-head capitalize">
-            Welcome to MCCS
+        <div className="cs-content tablet:max-w-[50%] smMobile:max-w-[80%] relative h-full">
+          <div className="bar w-[2rem] h-[1px] bg-blue-600 absolute left-[-2.5rem] top-[.7rem]"></div>
+          <p className="cs-head uppercase">
+            WELCOME TO MCCS
           </p>
-          <p className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</p>
+          <p className="text-[3.5rem] text-white font-DomineRegular leading-[4rem]">We are currently working on a new super awesome website.</p>
           <p className="my-[3rem] cs-content">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
           <form className="subscribe-email">
             <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20]" placeholder="Enter email" />
