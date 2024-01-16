@@ -8,6 +8,7 @@ import CustomCountdown from "../components/CustomCountdown";
 import { useState } from "react";
 import BurgerIcon from "../components/BurgerIcon";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { CiMenuBurger } from "react-icons/ci";
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import ParticlesLayer from "../components/ParticlesLayer";
@@ -20,14 +21,23 @@ const ComingSoonPage = () => {
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
   return (
-    <div className="smMobile:px-1 tablet:p-5 flex items-center flex-col bg-transparent">
+    <div className="smMobile:px-1 tablet:p-5 flex justify-center flex-col bg-transparent">
       <ParticlesLayer/>
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
-          <Button onClick={openDrawer} className="text-xl bg-transparent border-[1px] border-blue-600 text-blue-600">
-            {/* <BurgerIcon/> */}
-            <RxHamburgerMenu />
-          </Button>
+          <div className="navbar flex justify-between items-center w-full">
+            <div onClick={openDrawer} >
+              <Button className="text-xl p-2 bg-transparent border-[1px] border-[#ffffff1f] text-blue-600 rounded-none">
+                {/* <BurgerIcon/> */}
+                {/* <RxHamburgerMenu /> */}
+                <CiMenuBurger />
+              </Button>
+              <span className="pl-2 text-white tracking-widest">MORE INFO</span>
+            </div>
+            {/* <div>
+              <img src="/logo.png" className="w-[20rem]" />
+            </div> */}
+          </div>
           <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
             <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full smMobile:overflow-y-scroll tablet:overflow-hidden">
               <div className="drawer-left smMobile:p-[2rem] tablet:p-0">
@@ -48,13 +58,18 @@ const ComingSoonPage = () => {
                   </svg>
 
                 </IconButton>
-                <div className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></div>
-                <Typography variant="h5" className="berbefore text-blue-gray-100 text-[4rem] font-DomineRegular font-light">
-                  We are MCCS. Mumbai City Carewell Security.
-                </Typography>
-                <Typography color="gray" className="mb-8 pr-4 w-[90%] cs-content">
-                  With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
-                </Typography>
+                <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] ml-[12rem]"></div>
+                <div className="flex flex-col w-[70%] ml-[12rem]">
+                  <Typography variant="h1" className="berbefore text-blue-gray-100 text-[5rem] font-DomineRegular font-light w-[70%] tracking-normal">
+                    We are MCCS. Mumbai City Carewell Security.
+                  </Typography>
+                  <Typography color="gray" className="mb-8 pr-4 w-[75%] cs-content text-[18px] tracking-wide">
+                    With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
+                  </Typography>
+                  <Typography color="gray" className="mb-8 pr-4 w-[75%] cs-content text-[18px] tracking-wide">
+                  By choosing MCCS, you're not just getting a one-size-fits-all solution - you're receiving a bespoke security framework crafted to address your distinct needs, ensuring optimal protection and peace of mind.
+                  </Typography>
+                </div>
               </div>
               <div className="drawer-right flex flex-col justify-between smMobile:items-center tablet:items-end h-full">
                 <IconButton variant="text" color="white" className="bg-gray-700 min-h-[2rem] smMobile:hidden tablet:block" onClick={closeDrawer}>
