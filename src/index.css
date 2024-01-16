@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
     font-family: 'MetropolisMedium';
-    src: url("/public/metropolis/metropolis-medium-webfont.woff")format('.woff');
+    src: url("/public/metropolis/metropolis-medium-webfont.woff2")format('.woff2');
 }
 @font-face {
-    font-family: MetropolisRegular;
-    src: url('/public/metropolis/metropolis-regular-webfont.woff')format('.woff');
+    font-family: 'MetropolisRegular';
+    src: url('/public/metropolis/metropolis-regular-webfont.woff2')format('.woff2');
 }
 @font-face {
     font-family: 'DomineRegular';
@@ -18,4 +20,7 @@
 
 .logo{
     background: url('/logo.png');
+}
+.cs-top{
+    font-family: 'Poppins', sans-serif;
 }

@@ -45,7 +45,7 @@ const ComingSoonPage = () => {
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
-                  
+
                 </IconButton>
                 <div className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></div>
                 <Typography variant="h5" className="berbefore text-blue-gray-100 text-[4rem] font-DomineRegular font-light">
@@ -114,6 +114,8 @@ const ComingSoonPage = () => {
       </div>
       <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around items-center h-full w-full">
         <div className="cs-countdown smMobile:hidden tablet:block">
+          <span className="bar w-[5rem] h-[2px] bg-[#ec008c99]"></span>
+          <p className="font-MetropolisRegular"></p>
           Launching In
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
@@ -123,6 +125,32 @@ const ComingSoonPage = () => {
           </p>
           <p className="text-[3.5rem] text-white font-DomineRegular">We are currently working on a new super awesome website.</p>
           <p className="my-[3rem]">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
+          <form className="subscribe-email">
+            <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20]" placeholder="Enter email"/>
+            <button type="submit" className="px-[2rem] py-[1rem] bg-blue-600">Notify Me</button>
+          </form>
+        </div>
+        <div className="connect-socials flex flex-col gap-[2rem]">
+          <div className="facebook flex justify-center items-center relative">
+            <Button utton className="text-xl p-0 mx-3"><FaFacebookSquare /></Button>
+            <p className="absolute right-[4rem] scale-0 transition duration-300">Facebook</p>
+          </div>
+          <div className="facebook flex justify-center items-center relative">
+            <Button utton className="text-xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
+            <p className="absolute right-[4rem]">Twitter</p>
+          </div>
+          <div className="facebook flex justify-center items-center relative">
+            <Button utton className="text-xl p-0 mx-3 bg-transparent"><FaInstagram /></Button>
+            <p className="absolute right-[4rem]">Instagram</p>
+          </div>
+          <div className="facebook flex justify-center items-center relative">
+            <Button utton className="text-xl p-0 mx-3"><FaLinkedin /></Button>
+            <p className="absolute right-[4rem]">Linkdin</p>
+          </div>
+          <div className="facebook flex justify-center items-center relative">
+            <Button utton className="text-xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
+            <p className="absolute right-[4rem]">Youtube</p>
+          </div>
         </div>
         <div className="cs-countdown tablet:hidden">
           Launching In
