@@ -24,11 +24,28 @@ const ComingSoonPage = () => {
         <div className="nav">
           <Button onClick={openDrawer} className="text-xl bg-transparent border-[1px] border-blue-600 text-blue-600">
             {/* <BurgerIcon/> */}
+
             <RxHamburgerMenu />
           </Button>
-          <Drawer open={open} onClose={closeDrawer} size={10000} className="py-[5rem] px-[8rem] bg-gray">
-            <div className="mb-6 flex items-center justify-between h-full">
+          <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[5rem] px-[8rem] bg-gray">
+            <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full overflow-y-scroll">
               <div className="drawer-left">
+              <IconButton variant="text" color="white" className="bg-gray-700 ml-[90%] tablet:hidden" onClick={closeDrawer}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-5 w-5 "
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </IconButton>
                 <Typography variant="h5" className="text-blue-gray-100 text-[4rem]">
                   We are MCCS. Mumbai City Carewell Security.
                 </Typography>
@@ -36,8 +53,8 @@ const ComingSoonPage = () => {
                   With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
                 </Typography>
               </div>
-              <div className="drawer-right flex flex-col justify-between items-end h-full">
-                <IconButton variant="text" color="white" className="bg-gray-700" onClick={closeDrawer}>
+              <div className="drawer-right flex flex-col justify-between smMobile:items-center tablet:items-end h-full">
+                <IconButton variant="text" color="white" className="bg-gray-700 smMobile:hidden" onClick={closeDrawer}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -58,9 +75,9 @@ const ComingSoonPage = () => {
                   <p>mumbaicitycarewll2012@gmail.com</p>
                   <p>+91 7400 488 233</p>
                 </div>
-                <div className="connect-address">
+                <div className="connect-address mx-[25%]">
                   <p className="my-3 text-blue-600">Visit our office</p>
-                  <p>V17, Vaibhav Shopping Center,
+                  <p className="">V17, Vaibhav Shopping Center,
                     Goregaon (E),
                     Mumbai - 400065, India</p>
                 </div>
@@ -98,12 +115,12 @@ const ComingSoonPage = () => {
           Launching In
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>
-        <div className="cs-content max-w-[60%]">
+        <div className="cs-content max-w-[50%]">
           <div className="cs-head">
             Welcome to MCCS
           </div>
-          <h3 className="font-bold text-4xl">We are currently working on a new super awesome website.</h3>
-          <p className="">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
+          <h3 className="font-bold text-5xl">We are currently working on a new super awesome website.</h3>
+          <p className="my-[3rem]">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
         </div>
       </div>
     </div>
