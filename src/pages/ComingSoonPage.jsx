@@ -18,26 +18,20 @@ import '../styles/styles.css'
 const ComingSoonPage = () => {
   const [open, setOpen] = useState(false);
   const [hamMsg, setHamMsg] = useState("More Info")
-  const openDrawer = () => setOpen(true);
-  const closeDrawer = () => setOpen(false);
+  const openDrawer = () => {setOpen(true); setHamMsg("Close")};
+  const closeDrawer = () => {setOpen(false); setHamMsg("More")};
+  const handelDrawer = () => {
+    open?closeDrawer():openDrawer();
+  }
   return (
     <div className="smMobile:px-1 tablet:p-5 flex justify-center flex-col bg-transparent">
       <ParticlesLayer/>
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
-          <div className="navbar flex justify-between items-center w-full">
-            <div onClick={openDrawer} >
-              <Button className="text-xl p-2 bg-transparent border-[1px] border-[#ffffff1f] text-blue-600 rounded-none">
-                {/* <BurgerIcon/> */}
-                {/* <RxHamburgerMenu /> */}
-                <CiMenuBurger />
-              </Button>
-              <span className="pl-2 text-white tracking-widest">MORE INFO</span>
-            </div>
-            {/* <div>
-              <img src="/logo.png" className="w-[20rem]" />
-            </div> */}
-          </div>
+          <Button onClick={handelDrawer} className="absolute left-[.5rem] z-[999999] tablet:top-[2rem] smMobile:top-[1rem] flex gap-3 text-xl bg-transparent border-[1px] border-gray-900 text-blue-600">
+            <RxHamburgerMenu />
+            <span className="text-sm">{hamMsg}</span>
+          </Button>
           <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
             <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full smMobile:overflow-y-scroll tablet:overflow-hidden">
               <div className="drawer-left smMobile:p-[2rem] tablet:p-0">
@@ -141,14 +135,14 @@ const ComingSoonPage = () => {
           <p className="cs-head uppercase">
             WELCOME TO MCCS
           </p>
-          <p className="text-[3.5rem] text-white font-DomineRegular leading-[4rem]">We are currently working on a new super awesome website.</p>
-          <p className="my-[3rem] cs-content">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
+          <p className="text-[3.5rem] text-white font-DomineRegular leading-[4rem] smMobile:text-center tablet:text-left">We are currently working on a new super awesome website.</p>
+          <p className="my-[3rem] cs-content smMobile:text-center tablet:text-left">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
           <form className="subscribe-email">
             <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20]" placeholder="Enter email" />
             <button type="submit" className="px-[2rem] py-[1rem] bg-blue-600 text-white">Notify Me</button>
           </form>
         </div>
-        <div className="connect-socials flex flex-col gap-[2rem]">
+        <div className="connect-socials flex flex-col gap-[2rem] smMobile:hidden tablet:flex absolute right-[1rem] top-[40%]">
           <div className="facebook flex justify-center items-center relative">
             <Button utton className="text-xl p-0 mx-3"><FaFacebookSquare /></Button>
             <p className="absolute right-[4rem] transition duration-300">Facebook</p>
@@ -170,7 +164,7 @@ const ComingSoonPage = () => {
             <p className="absolute right-[4rem] transition duration-300">Youtube</p>
           </div>
         </div>
-        <div className="cs-countdown tablet:hidden">
+        <div className="cs-countdown tablet:hidden my-[5rem]">
           Launching In
           <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
         </div>

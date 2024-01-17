@@ -6,3 +6,9 @@ body, .cs-head, .cs-content{
     color: white;
     letter-spacing: 2px;
 }
+.logo{
+    background: url('/logo.png');
+    border: 2px solid wheat;
+    min-height: 2rem;
+    min-width: 2rem;
+}
