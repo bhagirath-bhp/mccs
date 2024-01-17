@@ -118,7 +118,7 @@ const ComingSoonPage = () => {
                     <p>mumbaicitycarewll2012@gmail.com</p>
                     <p>+91 7400 488 233</p>
                   </div>
-                  <div className="connect-address verySmMobile:mx-[10%] tablet:mx-auto">
+                  <div className="connect-address verySmMobile:mx-[23%] tablet:mx-auto">
                     <p className="my-3 text-blue-600">Visit our office</p>
                     <p className="">V17, Vaibhav Shopping Center,
                       Goregaon (E),
