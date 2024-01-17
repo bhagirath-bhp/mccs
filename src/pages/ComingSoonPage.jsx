@@ -28,7 +28,7 @@ const ComingSoonPage = () => {
   const openDrawer = () => { setOpen(true); setHamMsg("Close") };
   const closeDrawer = () => { setOpen(false); setHamMsg("More Info") };
   const genericHamburgerLine = "h-1 w-6 my-1 rounded-full bg-[#1c75bc] transition ease transform duration-300";
-  const [email,setEmail] = useState("")
+  const [email, setEmail] = useState("")
   const handleDrawer = () => {
     if (open)
       closeDrawer();
@@ -113,9 +113,15 @@ const ComingSoonPage = () => {
                   </div>
                 </div>
                 <div className="drawer-right smMobile:max-w-[90%] tablet:max-w-full flex flex-col justify-center smMobile:items-center tablet:items-end h-full pt-[5rem]">
-                  <div className="connect-email">
+                  {/* <div className="tablet:static">
                     <p className="my-3 text-blue-600">Start a conversation</p>
                     <a className="cursor-pointer underline text-blue-400">miteshmccs@gmail.com</a>
+                    <br />
+                    <a className="cursor-pointer underline text-blue-400">+91 7400 488 233</a>
+                  </div> */}
+                  <div className="connect-address smMobile:pl-[7rem] tablet:ml-0 w-full">
+                    <p className="my-3 text-blue-600">Start a conversation</p>
+                    <a className="cursor-pointer underline text-blue-400 w-">miteshmccs@gmail.com</a>
                     <br />
                     <a className="cursor-pointer underline text-blue-400">+91 7400 488 233</a>
                   </div>
@@ -125,7 +131,7 @@ const ComingSoonPage = () => {
                       Goregaon (E),
                       Mumbai - 400065, India</p>
                   </div>
-                    <p className="my-[2rem] text-blue-600 col-span-2 smMobile:w-[50%] tablet:w-full text-left">Find us on</p>
+                  <p className="my-[2rem] text-blue-600 col-span-2 smMobile:w-[50%] tablet:w-full text-left">Find us on</p>
                   <div className="connect-socials smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 smMobile:px-[22%] tablet:px-0 tablet:ml-0">
                     <a target="_blank" href="https://m.facebook.com/people/Mumbai-City-Carewell-Utility-Services/100054282966763/" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
@@ -145,7 +151,7 @@ const ComingSoonPage = () => {
                     </a>
                     <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center">
                       {/* <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button> */}
-                      <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]"/></Button>
+                      <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]" /></Button>
                       <p className="smMobile:hidden tablet:block">Youtube</p>
                     </a>
                   </div>
@@ -195,7 +201,7 @@ const ComingSoonPage = () => {
             <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center relative">
               {/* <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button> */}
               <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}>
-                <img src="/favicon.png" className="max-w-[25px]"/>
+                <img src="/favicon.png" className="max-w-[25px]" />
               </Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(youtubeMsgState) ? "scale-1" : "scale-0"}`} >Youtube</p>
             </a>
