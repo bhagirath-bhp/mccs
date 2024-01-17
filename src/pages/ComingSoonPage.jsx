@@ -21,10 +21,11 @@ const ComingSoonPage = () => {
   const openDrawer = () => { setOpen(true); setHamMsg("Close") };
   const closeDrawer = () => { setOpen(false); setHamMsg("More Info") };
   const handelDrawer = () => {
-    if(open)
+    if (open)
       closeDrawer();
     else
       openDrawer();
+    console.log(open)
   }
   return (
     <div className="smMobile:px-1 tablet:p-5 flex justify-center flex-col bg-transparent">
@@ -35,26 +36,9 @@ const ComingSoonPage = () => {
             <RxHamburgerMenu />
             <span className="text-sm">{hamMsg}</span>
           </Button>
-          <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
+          <Drawer open={open} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
             <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full smMobile:overflow-y-scroll tablet:overflow-hidden">
               <div className="drawer-left smMobile:p-[2rem] tablet:p-0">
-                {/* <IconButton variant="text" color="white" className="bg-gray-700 text-white flex my-[5rem] ml-[5%] tablet:hidden" onClick={closeDrawer}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="h-5 w-5 "
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-
-                </IconButton> */}
                 <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] ml-[12rem]"></div>
                 <div className="flex flex-col w-[70%] ml-[12rem]">
                   <Typography variant="h1" className="berbefore text-blue-gray-100 text-[5rem] font-DomineRegular font-light w-[70%] tracking-normal">
@@ -69,22 +53,6 @@ const ComingSoonPage = () => {
                 </div>
               </div>
               <div className="drawer-right flex flex-col justify-between smMobile:items-center tablet:items-end h-full">
-                <IconButton variant="text" color="white" className="bg-gray-700 min-h-[2rem] smMobile:hidden tablet:block" onClick={closeDrawer}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="h-5 w-5 "
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </IconButton>
                 <div className="connect-email">
                   <p className="my-3 text-blue-600">Start a conversation</p>
                   <p>mumbaicitycarewll2012@gmail.com</p>
@@ -125,7 +93,7 @@ const ComingSoonPage = () => {
         </div>
         <div className="logo bg-logo"></div>
       </div>
-      <div className="cs-main flex smMobile:flex-col tablet:flex-row justify-around smMobile:items-center tablet:items-start h-full w-full smMobile:p-0 tablet:px-[5rem]">
+      <div className={`cs-main flex smMobile:flex-col tablet:flex-row justify-around smMobile:items-center tablet:items-start h-full smMobile:p-0 tablet:px-[5rem] transform origin-right ${(open)?"scale-x-0":"scale-x-1"} overflow-hidden transition duration-200`}>
         <div className="cs-countdown smMobile:hidden tablet:block relative tablet:my-[5rem]">
           <div className="bar w-[2rem] h-[1px] bg-blue-600 absolute left-[-2.5rem] top-[.7rem]"></div>
           <p className="cs-head uppercase">

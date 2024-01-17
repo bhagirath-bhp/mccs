@@ -8,7 +8,8 @@ body, .cs-head, .cs-content{
 }
 .logo{
     background: url('/logo.png');
-    border: 2px solid wheat;
-    min-height: 2rem;
-    min-width: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 5rem;
+    min-width: 15rem;
 }
