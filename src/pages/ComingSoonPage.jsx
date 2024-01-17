@@ -67,7 +67,7 @@ const ComingSoonPage = () => {
           <div className="nav">
             {/* <Button onClick={handelDrawer} className="absolute left-[.5rem] z-[999999] flex gap-3 text-xl bg-transparent border-[1px] border-gray-900 text-blue-600 flex justify-center items-center"> */}
             {/* <RxHamburgerMenu /> */}
-            <Button onClick={handleDrawer} className="absolute left-[.5rem] z-[999999] gap-3 text-xl bg-gray-900 border-[1px] border-gray-900 text-blue-600 flex justify-center items-center">
+            <Button onClick={handleDrawer} className="absolute left-[.5rem] z-[999999] gap-3 text-xl bg-black border-[1px] border-gray-900 text-blue-600 flex justify-center items-center">
               {/* <RxHamburgerMenu /> */}
 
               <button
