@@ -21,21 +21,24 @@ const ComingSoonPage = () => {
   const openDrawer = () => { setOpen(true); setHamMsg("Close") };
   const closeDrawer = () => { setOpen(false); setHamMsg("More Info") };
   const handelDrawer = () => {
-    open ? closeDrawer() : openDrawer();
+    if(open)
+      closeDrawer();
+    else
+      openDrawer();
   }
   return (
     <div className="smMobile:px-1 tablet:p-5 flex justify-center flex-col bg-transparent">
       <ParticlesLayer />
       <div className="cs-top flex justify-between w-full">
         <div className="nav">
-          <Button onClick={handelDrawer} className="absolute left-[.5rem] z-[999999] tablet:top-[2rem] smMobile:top-[1rem] flex gap-3 text-xl bg-transparent border-[1px] border-gray-900 text-blue-600">
+          <Button onClick={handelDrawer} className="absolute left-[.5rem] z-[999999] flex gap-3 text-xl bg-transparent border-[1px] border-gray-900 text-blue-600">
             <RxHamburgerMenu />
             <span className="text-sm">{hamMsg}</span>
           </Button>
           <Drawer open={open} onClose={closeDrawer} size={10000} className="smMobile:py-[1rem] tablet:py-[3rem] tablet:px-[5rem] bg-black">
             <div className="mb-6 flex smMobile:flex-col tablet:flex-row items-center justify-between h-full smMobile:overflow-y-scroll tablet:overflow-hidden">
               <div className="drawer-left smMobile:p-[2rem] tablet:p-0">
-                <IconButton variant="text" color="white" className="bg-gray-700 text-white flex my-[5rem] ml-[5%] tablet:hidden" onClick={closeDrawer}>
+                {/* <IconButton variant="text" color="white" className="bg-gray-700 text-white flex my-[5rem] ml-[5%] tablet:hidden" onClick={closeDrawer}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -51,7 +54,7 @@ const ComingSoonPage = () => {
                     />
                   </svg>
 
-                </IconButton>
+                </IconButton> */}
                 <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] ml-[12rem]"></div>
                 <div className="flex flex-col w-[70%] ml-[12rem]">
                   <Typography variant="h1" className="berbefore text-blue-gray-100 text-[5rem] font-DomineRegular font-light w-[70%] tracking-normal">
