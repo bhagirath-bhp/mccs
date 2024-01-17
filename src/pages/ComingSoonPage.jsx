@@ -99,9 +99,9 @@ const ComingSoonPage = () => {
             <Drawer open={open} size={10000} className="bg-black h-full overflow-y-scroll">
               <div className="flex smMobile:flex-col tablet:flex-row items-start justify-between relative pt-[4rem] w-full smMobile:w-screen tablet:w-auto">
                 <div className="drawer-left  tablet:pt-[5rem] ">
-                  <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] absolute left-[4rem]"></div>
-                  <div className="flex flex-col ml-[4rem]">
-                    <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] max-w-[70%] font-DomineRegular font-light tracking-normal">
+                  <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] absolute left-[4rem] smMobile:top-[10rem] tablet:top-[8rem]"></div>
+                  <div className="flex flex-col ml-[4rem] smMobile:mt-[7rem] tablet:mt-0">
+                    <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] smMobile:text-[2rem] max-w-[70%] font-DomineRegular font-light tracking-normal">
                       We are MCCS. Mumbai City Carewell Security.
                     </h1>
                     <p color="gray" className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide my-[2rem]">
