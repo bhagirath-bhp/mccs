@@ -113,26 +113,20 @@ const ComingSoonPage = () => {
                   </div>
                 </div>
                 <div className="drawer-right smMobile:max-w-[90%] tablet:max-w-full flex flex-col justify-center smMobile:items-center tablet:items-end h-full pt-[5rem]">
-                  {/* <div className="tablet:static">
+                  <div className="connect-mail w-full smMobile:pl-[4rem] tablet:pl-0">
                     <p className="my-3 text-blue-600">Start a conversation</p>
-                    <a className="cursor-pointer underline text-blue-400">miteshmccs@gmail.com</a>
-                    <br />
-                    <a className="cursor-pointer underline text-blue-400">+91 7400 488 233</a>
-                  </div> */}
-                  <div className="connect-address smMobile:pl-[7rem] tablet:ml-0 w-[90%]">
-                    <p className="my-3 text-blue-600">Start a conversation</p>
-                    <a className="cursor-pointer underline text-blue-400 w-" href="mailto:miteshmccs@gmail.com">miteshmccs@gmail.com</a>
+                    <a className="cursor-pointer underline text-blue-400" href="mailto:miteshmccs@gmail.com">miteshmccs@gmail.com</a>
                     <br />
                     <a className="cursor-pointer underline text-blue-400" href="tel:+917400488233">+91 7400 488 233</a>
                   </div>
-                  <div className="connect-address smMobile:ml-[22%] tablet:ml-0">
+                  <div className="connect-address w-full smMobile:pl-[4rem] tablet:pl-0 tablet:ml-0">
                     <p className="my-3 text-blue-600">Visit our office</p>
                     <p className="">V17, Vaibhav Shopping Center,
                       Goregaon (E),
                       Mumbai - 400065, India</p>
                   </div>
-                  <p className="my-[2rem] text-blue-600 col-span-2 smMobile:w-[50%] tablet:w-full text-left">Find us on</p>
-                  <div className="connect-socials smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 smMobile:px-[22%] tablet:px-0 tablet:ml-0">
+                  <p className="my-[2rem] text-blue-600 col-span-2 w-full smMobile:pl-[4rem] tablet:pl-0 text-left">Find us on</p>
+                  <div className="connect-socials w-full smMobile:pl-[4rem] tablet:pl-0 smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 tablet:px-0 tablet:ml-0">
                     <a target="_blank" href="https://m.facebook.com/people/Mumbai-City-Carewell-Utility-Services/100054282966763/" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
                       <p className="smMobile:hidden tablet:block">Facebook</p>
