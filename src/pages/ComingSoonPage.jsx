@@ -115,7 +115,7 @@ const ComingSoonPage = () => {
                 <div className="drawer-right flex flex-col justify-between smMobile:items-center tablet:items-end h-full pt-[5rem] pr-[5rem]">
                   <div className="connect-email">
                     <p className="my-3 text-blue-600">Start a conversation</p>
-                    <p>mumbaicitycarewll2012@gmail.com</p>
+                    <p>miteshmccs@gmail.com</p>
                     <p>+91 7400 488 233</p>
                   </div>
                   <div className="connect-address verySmMobile:mx-[23%] tablet:mx-auto">
