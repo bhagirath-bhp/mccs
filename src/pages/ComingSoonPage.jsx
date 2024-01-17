@@ -126,26 +126,26 @@ const ComingSoonPage = () => {
                   </div>
                     <p className="my-3 text-blue-600 col-span-2 w-[60%] text-left">Find us on</p>
                   <div className="connect-socials smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 smMobile:px-[22%] tablet:px-0 tablet:ml-0">
-                    <div className="facebook flex justify-center items-center">
+                    <a target="_blank" href="https://m.facebook.com/people/Mumbai-City-Carewell-Utility-Services/100054282966763/" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
                       <p className="smMobile:hidden tablet:block">Facebook</p>
-                    </div>
-                    <div className="facebook flex justify-center items-center">
+                    </a>
+                    <a target="_blank" href="https://twitter.com/MadhukarNa28455" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
                       <p className="smMobile:hidden tablet:block">Twitter</p>
-                    </div>
-                    <div className="facebook flex justify-center items-center">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/mccsxguard?igshid=OGQ5ZDc2ODk2ZA==" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaInstagram /></Button>
                       <p className="smMobile:hidden tablet:block">Instagram</p>
-                    </div>
-                    <div className="facebook flex justify-center items-center">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/mumbaicitycarewell/" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3"><FaLinkedin /></Button>
                       <p className="smMobile:hidden tablet:block">Linkdin</p>
-                    </div>
-                    <div className="facebook flex justify-center items-center">
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
                       <p className="smMobile:hidden tablet:block">Youtube</p>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -174,26 +174,26 @@ const ComingSoonPage = () => {
             </form>
           </div>
           <div className="connect-socials flex flex-col gap-[2rem] smMobile:hidden tablet:flex absolute right-[1rem] top-[25%]">
-            <div className="facebook flex justify-center items-center relative">
-              <Button utton className="text-xl p-0 mx-3" onMouseEnter={() => { setFbMsgState(true) }} onMouseLeave={() => { setFbMsgState(false) }}><FaFacebookSquare /></Button>
+            <a target="_blank" href="https://m.facebook.com/people/Mumbai-City-Carewell-Utility-Services/100054282966763/" className="facebook flex justify-center items-center relative">
+              <Button className="text-xl p-0 mx-3" onMouseEnter={() => { setFbMsgState(true) }} onMouseLeave={() => { setFbMsgState(false) }}><FaFacebookSquare /></Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(fbMsgState) ? "scale-1" : "scale-0"}`} >Facebook</p>
-            </div>
-            <div className="facebook flex justify-center items-center relative">
-              <Button utton className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setTwitterMsgState(true) }} onMouseLeave={() => { setTwitterMsgState(false) }}><FaXTwitter /></Button>
+            </a>
+            <a target="_blank" href="https://twitter.com/MadhukarNa28455" className="facebook flex justify-center items-center relative">
+              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setTwitterMsgState(true) }} onMouseLeave={() => { setTwitterMsgState(false) }}><FaXTwitter /></Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(twitterMsgState) ? "scale-1" : "scale-0"}`} >Twitter</p>
-            </div>
-            <div className="facebook flex justify-center items-center relative">
-              <Button utton className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setInstagramMsgState(true) }} onMouseLeave={() => { setInstagramMsgState(false) }}><FaInstagram /></Button>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/mccsxguard?igshid=OGQ5ZDc2ODk2ZA==" className="facebook flex justify-center items-center relative">
+              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setInstagramMsgState(true) }} onMouseLeave={() => { setInstagramMsgState(false) }}><FaInstagram /></Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(instagramMsgState) ? "scale-1" : "scale-0"}`} >Instagram</p>
-            </div>
-            <div className="facebook flex justify-center items-center relative">
-              <Button utton className="text-xl p-0 mx-3" onMouseEnter={() => { setLinkedinMsgState(true) }} onMouseLeave={() => { setLinkedinMsgState(false) }}><FaLinkedin /></Button>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/mumbaicitycarewell/" className="facebook flex justify-center items-center relative">
+              <Button className="text-xl p-0 mx-3" onMouseEnter={() => { setLinkedinMsgState(true) }} onMouseLeave={() => { setLinkedinMsgState(false) }}><FaLinkedin /></Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(linkedinMsgState) ? "scale-1" : "scale-0"}`} >Linkedin</p>
-            </div>
-            <div className="facebook flex justify-center items-center relative">
-              <Button utton className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center relative">
+              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(youtubeMsgState) ? "scale-1" : "scale-0"}`} >Youtube</p>
-            </div>
+            </a>
           </div>
           <div className="cs-countdown relative tablet:hidden">
             <div className="bar w-[2rem] h-[1px] bg-blue-600 absolute left-[-2.5rem] top-[.7rem]"></div>
