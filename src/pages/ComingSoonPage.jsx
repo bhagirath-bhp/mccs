@@ -46,10 +46,10 @@ const ComingSoonPage = () => {
       to_email: email
     };
     emailjs.send(
-      "service_p0klnrq",
-      "template_ybh871j",
+      "service_wrp6skq",
+      "template_ttffeg5",
       templateParams,
-      "ktRskkOqTONUReovx"
+      "6eTpwzF5VSQmoVX5u"
     ).then((response) => {
       console.log("SUCCESS!", response.status, response.text);
       setEmail("")
@@ -97,7 +97,7 @@ const ComingSoonPage = () => {
             {/* <span className="text-sm text-white">{hamMsg}</span> */}
             {/* </Button> */}
             <Drawer open={open} size={10000} className="bg-black h-full overflow-y-scroll">
-              <div className="flex smMobile:flex-col tablet:flex-row items-start justify-between relative pt-[4rem] w-full smMobile:w-screen tablet:w-auto">
+              <div className="flex smMobile:flex-col tablet:flex-row items-start justify-between relative pr-[4rem] pt-[4rem] w-full smMobile:w-screen tablet:w-auto">
                 <div className="drawer-left  tablet:pt-[5rem] ">
                   <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] absolute left-[4rem] smMobile:top-[10rem] tablet:top-[8rem]"></div>
                   <div className="flex flex-col ml-[4rem] smMobile:mt-[7rem] tablet:mt-0">
@@ -112,7 +112,7 @@ const ComingSoonPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="drawer-right smMobile:max-w-[90%] tablet:max-w-full flex flex-col justify-between smMobile:items-center tablet:items-end h-full pt-[5rem] pr-[5rem]">
+                <div className="drawer-right smMobile:max-w-[90%] tablet:max-w-full flex flex-col justify-center smMobile:items-center tablet:items-end h-full pt-[5rem]">
                   <div className="connect-email">
                     <p className="my-3 text-blue-600">Start a conversation</p>
                     <a className="cursor-pointer underline text-blue-400">miteshmccs@gmail.com</a>
@@ -121,11 +121,11 @@ const ComingSoonPage = () => {
                   </div>
                   <div className="connect-address smMobile:ml-[22%] tablet:ml-0">
                     <p className="my-3 text-blue-600">Visit our office</p>
-                    <p className="max-w-[50%]">V17, Vaibhav Shopping Center,
+                    <p className="">V17, Vaibhav Shopping Center,
                       Goregaon (E),
                       Mumbai - 400065, India</p>
                   </div>
-                    <p className="my-3 text-blue-600 col-span-2 w-[60%] text-left">Find us on</p>
+                    <p className="my-[2rem] text-blue-600 col-span-2 smMobile:w-[50%] tablet:w-full text-left">Find us on</p>
                   <div className="connect-socials smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 smMobile:px-[22%] tablet:px-0 tablet:ml-0">
                     <a target="_blank" href="https://m.facebook.com/people/Mumbai-City-Carewell-Utility-Services/100054282966763/" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
@@ -144,7 +144,8 @@ const ComingSoonPage = () => {
                       <p className="smMobile:hidden tablet:block">Linkdin</p>
                     </a>
                     <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center">
-                      <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
+                      {/* <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button> */}
+                      <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]"/></Button>
                       <p className="smMobile:hidden tablet:block">Youtube</p>
                     </a>
                   </div>
@@ -192,7 +193,10 @@ const ComingSoonPage = () => {
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(linkedinMsgState) ? "scale-1" : "scale-0"}`} >Linkedin</p>
             </a>
             <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center relative">
-              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button>
+              {/* <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button> */}
+              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}>
+                <img src="/favicon.png" className="max-w-[25px]"/>
+              </Button>
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(youtubeMsgState) ? "scale-1" : "scale-0"}`} >Youtube</p>
             </a>
           </div>

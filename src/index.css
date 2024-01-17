@@ -20,14 +20,3 @@
     font-family: 'PoppinsMedium';
     src: url("/public/Poppins/Poppins-Medium.ttf")format('.ttf');
 }
-
-@layer utilities {
-
-    .clip-100 {
-        clip-path: inset(0, 0, 0, 100%);
-    }
-    .clip-0{
-        clip-path: inset(0, 0, 0, 0%);
-    }
- 
- }
