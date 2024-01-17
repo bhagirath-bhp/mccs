@@ -13,3 +13,6 @@ body, .cs-head, .cs-content{
     min-height: 5rem;
     min-width: 15rem;
 }
+.scrollbar-0::-webkit-scrollbar{
+    width: 0;
+}
