@@ -7,7 +7,7 @@ body, .cs-head, .cs-content{
     letter-spacing: 2px;
 }
 .logo{
-    background: url('/logo.png');
+    background: url('/logo1.svg');
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 5rem;
