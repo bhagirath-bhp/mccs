@@ -27,7 +27,7 @@ const ComingSoonPage = () => {
   const [loading, setLoading] = useState(true);
   const openDrawer = () => { setOpen(true); setHamMsg("Close") };
   const closeDrawer = () => { setOpen(false); setHamMsg("More Info") };
-  const genericHamburgerLine = "h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300";
+  const genericHamburgerLine = "h-1 w-6 my-1 rounded-full bg-[#1c75bc] transition ease transform duration-300";
   const [email,setEmail] = useState("")
   const handleDrawer = () => {
     if (open)
@@ -38,7 +38,7 @@ const ComingSoonPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 2000);
+    }, 1000);
   }, [])
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -67,7 +67,7 @@ const ComingSoonPage = () => {
           <div className="nav">
             {/* <Button onClick={handelDrawer} className="absolute left-[.5rem] z-[999999] flex gap-3 text-xl bg-transparent border-[1px] border-gray-900 text-blue-600 flex justify-center items-center"> */}
             {/* <RxHamburgerMenu /> */}
-            <Button onClick={handleDrawer} className="absolute left-[.5rem] z-[999999] gap-3 text-xl bg-transparent border-[1px] border-gray-900 text-blue-600 flex justify-center items-center">
+            <Button onClick={handleDrawer} className="absolute left-[.5rem] z-[999999] gap-3 text-xl bg-gray-900 border-[1px] border-gray-900 text-blue-600 flex justify-center items-center">
               {/* <RxHamburgerMenu /> */}
 
               <button
@@ -75,17 +75,17 @@ const ComingSoonPage = () => {
 
               >
                 <div
-                  className={` bg-[#1c75bc] ${genericHamburgerLine} ${open
+                  className={`${genericHamburgerLine} ${open
                     ? "rotate-45 translate-y-3"
                     : "opacity-100"
                     }`}
                 />
                 <div
-                  className={` bg-[#1c75bc] ${genericHamburgerLine} ${open ? "opacity-0" : "opacity-100"
+                  className={`${genericHamburgerLine} ${open ? "opacity-0" : "opacity-100"
                     }`}
                 />
                 <div
-                  className={` bg-[#1c75bc] ${genericHamburgerLine} ${open
+                  className={`${genericHamburgerLine} ${open
                     ? "-rotate-45 -translate-y-3"
                     : "opacity-100"
                     }`}
