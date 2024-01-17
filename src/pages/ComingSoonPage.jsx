@@ -91,7 +91,7 @@ const ComingSoonPage = () => {
                     }`}
                 />
               </button>
-              <span className="text-sm text-white">{hamMsg}</span>
+              <span className="text-sm text-white smMobile:hidden tablet:block">{hamMsg}</span>
             </Button>
 
             {/* <span className="text-sm text-white">{hamMsg}</span> */}
@@ -112,39 +112,39 @@ const ComingSoonPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="drawer-right flex flex-col justify-between smMobile:items-center tablet:items-end h-full pt-[5rem] pr-[5rem]">
+                <div className="drawer-right smMobile:max-w-[90%] tablet:max-w-full flex flex-col justify-between smMobile:items-center tablet:items-end h-full pt-[5rem] pr-[5rem]">
                   <div className="connect-email">
                     <p className="my-3 text-blue-600">Start a conversation</p>
                     <p>miteshmccs@gmail.com</p>
                     <p>+91 7400 488 233</p>
                   </div>
-                  <div className="connect-address verySmMobile:mx-[23%] tablet:mx-auto">
+                  <div className="connect-address smMobile:ml-[22%] tablet:ml-0">
                     <p className="my-3 text-blue-600">Visit our office</p>
-                    <p className="">V17, Vaibhav Shopping Center,
+                    <p className="max-w-[50%]">V17, Vaibhav Shopping Center,
                       Goregaon (E),
                       Mumbai - 400065, India</p>
                   </div>
-                  <div className="connect-socials grid grid-cols-2 grid-rows-4">
-                    <p className="my-3 text-blue-600 col-span-2">Find us on</p>
+                    <p className="my-3 text-blue-600 col-span-2 w-[60%] text-left">Find us on</p>
+                  <div className="connect-socials smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 smMobile:px-[22%] tablet:px-0 tablet:ml-0">
                     <div className="facebook flex justify-center items-center">
-                      <Button utton className="text-3xl p-0 mx-3"><FaFacebookSquare /></Button>
-                      <p>Facebook</p>
+                      <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
+                      <p className="smMobile:hidden tablet:block">Facebook</p>
                     </div>
                     <div className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
-                      <p>Twitter</p>
+                      <p className="smMobile:hidden tablet:block">Twitter</p>
                     </div>
                     <div className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaInstagram /></Button>
-                      <p>Instagram</p>
+                      <p className="smMobile:hidden tablet:block">Instagram</p>
                     </div>
                     <div className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3"><FaLinkedin /></Button>
-                      <p>Linkdin</p>
+                      <p className="smMobile:hidden tablet:block">Linkdin</p>
                     </div>
                     <div className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
-                      <p>Youtube</p>
+                      <p className="smMobile:hidden tablet:block">Youtube</p>
                     </div>
                   </div>
                 </div>
@@ -200,7 +200,7 @@ const ComingSoonPage = () => {
             <p className="cs-head uppercase">
               LAUNCHING IN
             </p>
-            <CustomCountdown days={2} hours={5} minutes={30} seconds={15} />
+            <CustomCountdown days={10} hours={0} minutes={10} seconds={0} />
           </div>
         </div>
       </div>
