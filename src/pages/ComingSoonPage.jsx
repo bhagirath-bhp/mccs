@@ -119,11 +119,11 @@ const ComingSoonPage = () => {
                     <br />
                     <a className="cursor-pointer underline text-blue-400">+91 7400 488 233</a>
                   </div> */}
-                  <div className="connect-address smMobile:pl-[7rem] tablet:ml-0 w-full">
+                  <div className="connect-address smMobile:pl-[7rem] tablet:ml-0 w-[90%]">
                     <p className="my-3 text-blue-600">Start a conversation</p>
-                    <a className="cursor-pointer underline text-blue-400 w-">miteshmccs@gmail.com</a>
+                    <a className="cursor-pointer underline text-blue-400 w-" href="mailto:miteshmccs@gmail.com">miteshmccs@gmail.com</a>
                     <br />
-                    <a className="cursor-pointer underline text-blue-400">+91 7400 488 233</a>
+                    <a className="cursor-pointer underline text-blue-400" href="tel:+917400488233">+91 7400 488 233</a>
                   </div>
                   <div className="connect-address smMobile:ml-[22%] tablet:ml-0">
                     <p className="my-3 text-blue-600">Visit our office</p>
