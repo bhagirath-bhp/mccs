@@ -144,8 +144,8 @@ const ComingSoonPage = () => {
                       <p className="smMobile:hidden tablet:block">Linkdin</p>
                     </a>
                     <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center">
-                      {/* <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button> */}
-                      <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]" /></Button>
+                      <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
+                      {/* <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]" /></Button> */}
                       <p className="smMobile:hidden tablet:block">Youtube</p>
                     </a>
                   </div>
@@ -193,10 +193,10 @@ const ComingSoonPage = () => {
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(linkedinMsgState) ? "scale-1" : "scale-0"}`} >Linkedin</p>
             </a>
             <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center relative">
-              {/* <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button> */}
-              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}>
+              <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}><FaYoutube /></Button>
+              {/* <Button className="text-xl p-0 mx-3 bg-transparent" onMouseEnter={() => { setYoutubeMsgState(true) }} onMouseLeave={() => { setYoutubeMsgState(false) }}>
                 <img src="/favicon.png" className="max-w-[25px]" />
-              </Button>
+              </Button> */}
               <p className={`absolute text-[#1c75bc] right-[4rem] transition duration-300 ${(youtubeMsgState) ? "scale-1" : "scale-0"}`} >Youtube</p>
             </a>
           </div>
