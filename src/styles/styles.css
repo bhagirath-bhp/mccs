@@ -16,3 +16,6 @@ body, .cs-head, .cs-content{
 .scrollbar-0::-webkit-scrollbar{
     width: 0;
 }
+.grey-bold{
+    font-weight: 700;
+}
