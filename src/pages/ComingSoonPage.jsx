@@ -104,10 +104,10 @@ const ComingSoonPage = () => {
                     <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] smMobile:text-[2rem] max-w-[70%] font-DomineRegular font-light tracking-normal">
                       We are MCCS. Mumbai City Carewell Security.
                     </h1>
-                    <p color="gray" className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide my-[2rem] grey-bold">
+                    <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide my-[2rem] grey-bold">
                       With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
                     </p>
-                    <p color="gray" className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide grey-bold">
+                    <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide grey-bold">
                       By choosing MCCS, you're not just getting a one-size-fits-all solution - you're receiving a bespoke security framework crafted to address your distinct needs, ensuring optimal protection and peace of mind.
                     </p>
                   </div>

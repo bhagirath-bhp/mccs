@@ -7,14 +7,20 @@
 @font-face {
     font-family: 'MetropolisMedium';
     src: url("/public/metropolis/metropolis-medium-webfont.woff2")format('.woff2');
+    src: url("/public/metropolis/metropolis-medium-webfont.woff")format('.woff');
+    src: url("/public/metropolis/metropolis-medium-webfont.ttf")format('.tff');
 }
 @font-face {
     font-family: 'MetropolisRegular';
     src: url('/public/metropolis/metropolis-regular-webfont.woff2')format('.woff2');
+    src: url('/public/metropolis/metropolis-regular-webfont.woff')format('.woff');
+    src: url('/public/metropolis/metropolis-regular-webfont.ttf')format('.tff');
 }
 @font-face {
     font-family: 'DomineRegular';
     src: url("/public/Domine/domine-regular-webfont.woff2")format('.woff2');
+    src: url("/public/Domine/domine-regular-webfont.woff")format('.woff');
+    src: url("/public/Domine/domine-regular-webfont.ttf")format('.tff');
 }
 @font-face {
     font-family: 'PoppinsMedium';
