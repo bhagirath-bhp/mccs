@@ -29,7 +29,7 @@
         "value": "#ffffff"
       },
       "links": {
-        "color": "#ffffff",
+        "color": "#ffffff1d",
         "distance": 150,
         "enable": true,
         "opacity": 0.5,
@@ -52,7 +52,7 @@
         "density": {
           "enable": true
         },
-        "value": 80
+        "value": 140
       },
       "opacity": {
         "value": 0.5
@@ -62,7 +62,7 @@
       },
       "size": {
         "random": true,
-        "value": 5
+        "value": 2
       }
     }
   }
