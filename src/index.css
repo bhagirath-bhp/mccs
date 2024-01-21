@@ -24,6 +24,7 @@
     src: url("/public/Domine/domine-regular-webfont.woff2")format('.woff2');
     src: url("/public/Domine/domine-regular-webfont.woff")format('.woff');
     src: url("/public/Domine/domine-regular-webfont.ttf")format('.tff');
+    src: url('/public/Domine/Domine-Regular.svg#DomineRegular')format('svg');
 }
 @font-face {
     font-family: 'PoppinsMedium';
