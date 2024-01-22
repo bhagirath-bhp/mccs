@@ -20,3 +20,6 @@ body, .cs-head, .cs-content{
     font-weight: 900;
     font-size: 1.1rem;
 }
+.domine-reg{
+    font-family: 'DomineRegular' !important;
+}

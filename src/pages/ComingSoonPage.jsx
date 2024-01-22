@@ -101,7 +101,7 @@ const ComingSoonPage = () => {
                 <div className="drawer-left  tablet:pt-[5rem] ">
                   <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] absolute left-[4rem] smMobile:top-[10rem] tablet:top-[8rem]"></div>
                   <div className="flex flex-col ml-[4rem] smMobile:mt-[7rem] tablet:mt-0">
-                    <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] smMobile:text-[2rem] max-w-[70%] font-DomineRegular font-light tracking-normal">
+                    <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] smMobile:text-[2rem] max-w-[70%] domine-reg font-light tracking-normal">
                       We are MCCS. Mumbai City Carewell Security.
                     </h1>
                     <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide my-[2rem] grey-bold">
@@ -168,7 +168,7 @@ const ComingSoonPage = () => {
               <div className="bar w-[2rem] h-[1px] bg-blue-600 absolute top-[50%] left-[-3rem]"></div>
               <span>WELCOME TO MCCS</span>
             </p>
-            <p className="text-[3.5rem] text-white font-DomineRegular leading-[4rem] verySmMobile:text-center smMobile:text-left">We are currently working on a new super awesome website.</p>
+            <p className="text-[3.5rem] text-white domine-reg leading-[4rem] verySmMobile:text-center smMobile:text-left">We are currently working on a new super awesome website.</p>
             <p className="my-[2rem] cs-content verySmMobile:text-center smMobile:text-left grey-bold">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
             <form className="subscribe-email" onSubmit={(e) => handleSubmit(e)}>
               <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20] smMobile:w-full smMobile:my-[1rem] mobile:w-auto tablet:my-0" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
