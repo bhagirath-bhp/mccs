@@ -23,3 +23,7 @@ body, .cs-head, .cs-content{
 .domine-reg{
     font-family: 'DomineRegular' !important;
 }
+.cd-days::after{
+    content: 'days';
+    @apply bg-blue-700 w-fit px-4 py-1 absolute right-[2rem] mb-2 text-sm;
+}

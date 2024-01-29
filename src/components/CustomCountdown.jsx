@@ -21,8 +21,8 @@ const CustomCountdown = () => {
         <div className="flex flex-col justify-center text-center font-metropolis">
             <div className="flex flex-col text-left relative">
                 {/* <Countdown className="font-mono text-[10rem]" value={daysLeft} /> */}
-                <span className="text-[7rem] font-[100]">{remainingTime.days}</span>
-                <span className="bg-blue-700 w-fit px-4 py-1 absolute right-[-0.6rem] bottom-[30%]">days</span>
+                <span className="cd-days text-[7rem] font-[100]">{remainingTime.days}</span>
+                {/* <span className="bg-blue-700 w-fit px-4 py-1 absolute right-[-0.6rem] bottom-[30%]">days</span> */}
             </div>
             <div className="hms flex gap-10">
                 <div className="flex flex-col">
