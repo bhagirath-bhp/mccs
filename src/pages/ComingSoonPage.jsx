@@ -46,10 +46,10 @@ const ComingSoonPage = () => {
       to_email: email
     };
     emailjs.send(
-      "service_wrp6skq",
-      "template_ttffeg5",
+      "service_p0klnrq",
+      "template_ybh871j",
       templateParams,
-      "6eTpwzF5VSQmoVX5u"
+      "ktRskkOqTONUReovx"
     ).then((response) => {
       console.log("SUCCESS!", response.status, response.text);
       setEmail("")
@@ -131,7 +131,7 @@ const ComingSoonPage = () => {
                       <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
                       <p className="smMobile:hidden tablet:block">Facebook</p>
                     </a>
-                    <a target="_blank" href="https://twitter.com/MadhukarNa28455" className="facebook flex justify-center items-center">
+                    <a target="_blank" href="https://twitter.com/MadhukarNa28455" className="facebook flex justify-center items-center tablet:mx-[2rem]">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
                       <p className="smMobile:hidden tablet:block">Twitter</p>
                     </a>
@@ -139,7 +139,7 @@ const ComingSoonPage = () => {
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaInstagram /></Button>
                       <p className="smMobile:hidden tablet:block">Instagram</p>
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/mumbaicitycarewell/" className="facebook flex justify-center items-center">
+                    <a target="_blank" href="https://www.linkedin.com/in/mumbaicitycarewell/" className="facebook flex justify-center items-center tablet:mx-[2rem]">
                       <Button utton className="text-3xl p-0 mx-3"><FaLinkedin /></Button>
                       <p className="smMobile:hidden tablet:block">Linkdin</p>
                     </a>
