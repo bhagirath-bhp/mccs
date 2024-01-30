@@ -121,7 +121,7 @@ const ComingSoonPage = () => {
                   </div>
                   <div className="connect-address w-full smMobile:pl-[4rem] tablet:pl-0 tablet:ml-0">
                     <p className="my-3 text-blue-600">Visit our office</p>
-                    <p className="">V17, Vaibhav Shopping Center,
+                    <p className="text-white font-extralight">V17, Vaibhav Shopping Center,
                       Goregaon (E),
                       Mumbai - 400065, India</p>
                   </div>
@@ -129,24 +129,24 @@ const ComingSoonPage = () => {
                   <div className="connect-socials w-full smMobile:pl-[4rem] tablet:pl-0 smMobile:flex smMobile:flex-row flex-wrap tablet:grid gap-[2rem] tablet:grid-cols-2 grid-rows-4 tablet:px-0 tablet:ml-0">
                     <a target="_blank" href="https://m.facebook.com/people/Mumbai-City-Carewell-Utility-Services/100054282966763/" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 "><FaFacebookSquare /></Button>
-                      <p className="smMobile:hidden tablet:block">Facebook</p>
+                      <p className="smMobile:hidden tablet:block text-white font-extralight">Facebook</p>
                     </a>
                     <a target="_blank" href="https://twitter.com/MadhukarNa28455" className="facebook flex justify-center items-center tablet:mx-[2rem]">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaXTwitter /></Button>
-                      <p className="smMobile:hidden tablet:block">Twitter</p>
+                      <p className="smMobile:hidden tablet:block text-white font-extralight">Twitter</p>
                     </a>
                     <a target="_blank" href="https://www.instagram.com/mccsxguard?igshid=OGQ5ZDc2ODk2ZA==" className="facebook flex justify-center items-center">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaInstagram /></Button>
-                      <p className="smMobile:hidden tablet:block">Instagram</p>
+                      <p className="smMobile:hidden tablet:block text-white font-extralight">Instagram</p>
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/mumbaicitycarewell/" className="facebook flex justify-center items-center tablet:mx-[2rem]">
                       <Button utton className="text-3xl p-0 mx-3"><FaLinkedin /></Button>
-                      <p className="smMobile:hidden tablet:block">Linkdin</p>
+                      <p className="smMobile:hidden tablet:block text-white font-extralight">Linkedin</p>
                     </a>
                     <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center mr-[1rem]">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
                       {/* <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]" /></Button> */}
-                      <p className="smMobile:hidden tablet:block">Youtube</p>
+                      <p className="smMobile:hidden tablet:block text-white font-extralight">Youtube</p>
                     </a>
                   </div>
                 </div>
