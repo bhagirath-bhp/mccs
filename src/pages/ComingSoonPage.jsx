@@ -104,10 +104,10 @@ const ComingSoonPage = () => {
                     <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] smMobile:text-[2rem] max-w-[70%] domine-reg font-light tracking-normal">
                       We are MCCS. Mumbai City Carewell Security.
                     </h1>
-                    <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide my-[2rem] grey-bold">
+                    <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide my-[2rem] grey-bold text-white font-extralight">
                       With an impeccable track record and experience of more than a decade, we stand as guardians of safety, offering a comprehensive suite of security solutions designed to protect you and what matters most to you. With an unwavering commitment to excellence and a dedication to staying ahead of emerging threats, we redefine the standards of security in an ever-evolving world.
                     </p>
-                    <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide grey-bold">
+                    <p className="pr-4 w-[75%] cs-content text-[1rem] tracking-wide grey-bold text-white font-extralight">
                       By choosing MCCS, you're not just getting a one-size-fits-all solution - you're receiving a bespoke security framework crafted to address your distinct needs, ensuring optimal protection and peace of mind.
                     </p>
                   </div>
@@ -169,7 +169,7 @@ const ComingSoonPage = () => {
               <span>WELCOME TO MCCS</span>
             </p>
             <p className="text-[3.5rem] text-white domine-reg leading-[4rem] verySmMobile:text-center smMobile:text-left">We are currently working on a new super awesome website.</p>
-            <p className="my-[2rem] cs-content verySmMobile:text-center smMobile:text-left grey-bold">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
+            <p className="my-[2rem] cs-content verySmMobile:text-center smMobile:text-left grey-bold text-white font-extralight">At MCCS, transparency is not just a promise; it's a cornerstone of our service philosophy, reflecting our dedication to keeping you informed and in control of your security solutions.</p>
             <form className="subscribe-email" onSubmit={(e) => handleSubmit(e)}>
               <input type="email" className="px-[2rem] py-[1rem] text-white bg-[#ffffff20] smMobile:w-full smMobile:my-[1rem] mobile:w-auto tablet:my-0" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
               <button type="submit" className="px-[2rem] py-[1rem] bg-blue-600 text-white smMobile:w-full smMobile:my-[1rem] mobile:w-auto tablet:my-0 uppercase tracking-widest">Notify Me</button>
