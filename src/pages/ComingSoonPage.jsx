@@ -99,7 +99,7 @@ const ComingSoonPage = () => {
             <Drawer open={open} size={10000} className="bg-black h-full overflow-y-scroll">
               <div className="flex smMobile:flex-col tablet:flex-row items-start justify-between relative pr-[4rem] pt-[4rem] w-full smMobile:w-screen tablet:w-auto">
                 <div className="drawer-left  tablet:pt-[5rem] ">
-                  <div className="bar w-[4rem] h-[2px] bg-[#ec008c99] absolute left-[4rem] smMobile:top-[10rem] tablet:top-[8rem]"></div>
+                  <div className="bar w-[4rem] h-[2px] bg-blue-400 absolute left-[4rem] smMobile:top-[10rem] tablet:top-[8rem]"></div>
                   <div className="flex flex-col ml-[4rem] smMobile:mt-[7rem] tablet:mt-0">
                     <h1 className="berbefore text-blue-gray-100 tablet:text-[4rem] smMobile:text-[2rem] max-w-[70%] domine-reg font-light tracking-normal">
                       We are MCCS. Mumbai City Carewell Security.
@@ -143,7 +143,7 @@ const ComingSoonPage = () => {
                       <Button utton className="text-3xl p-0 mx-3"><FaLinkedin /></Button>
                       <p className="smMobile:hidden tablet:block">Linkdin</p>
                     </a>
-                    <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center">
+                    <a target="_blank" href="https://www.youtube.com/@MCCS2012" className="facebook flex justify-center items-center mr-[1rem]">
                       <Button utton className="text-3xl p-0 mx-3 bg-transparent"><FaYoutube /></Button>
                       {/* <Button utton className="text-3xl p-0 mx-3 bg-transparent"><img src="/favicon.png" className="max-w-[25px]" /></Button> */}
                       <p className="smMobile:hidden tablet:block">Youtube</p>
